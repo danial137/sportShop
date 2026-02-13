@@ -2,9 +2,9 @@
   "name": "api",
   "version": "0.0.1",
   "description": "Nest js API for E-commerce Application",
-  "author": "",
+  "author": "Danial",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
