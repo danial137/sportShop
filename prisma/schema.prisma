@@ -12,3 +12,11 @@ generator client {
 datasource db {
   provider = "postgresql"
 }
+
+// CRAETE PRISMA SCHEMA MODEL
+
+model User {
+  id  Int   @id @default(autoincrement())
+}
+
+
