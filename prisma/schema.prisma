@@ -15,8 +15,23 @@ datasource db {
 
 // CRAETE PRISMA SCHEMA MODEL
 
-model User {
-  id  Int   @id @default(autoincrement())
+enum Role {
+  USER
+  ADMIN
 }
 
+model User {
+  id        String  @id @default(uuid())
+  email     String  @unique
+  password  String
+  firstName String?
+  lastName  String?
+  role      Role
+}
 
+// model Post {
+//   id    Int     @id @default(autoincrement())
+//   title String
+//   userId Int
+//   user  User    @relation(fields: [userId], references: [id])
+// }
